@@ -40,8 +40,9 @@ public class School {
         Student[] students = new Student[20];
         for (int i = 0; i < 20; i++) {
             students[i] = new Student("Student" + (i + 1), "LastName" + (i + 1),"" + (i + 1));
-            students[i].setCourses(new Course[]{courses[i % 5]});
+            students[i].setCourses(courses);
         }
+        
 
         // Αναθέτει τους καθηγητές στα μαθήματα
         for (int i = 0; i < 5; i++) {
